@@ -1,0 +1,51 @@
+{
+  "tableName": "syneris_eqms_documents",
+  "columns": [
+    {
+      "columnNameDesc": "Document Name",
+      "columnName": "document_name",
+      "dataType": "text",
+      "maxLength": null,
+      "isNullable": "YES",
+      "defaultValue": null,
+      "operators": [
+        "=",
+        "!=",
+        "LIKE",
+        "NOT LIKE",
+        "ILIKE",
+        "NOT ILIKE",
+        "SIMILAR TO",
+        "NOT SIMILAR TO",
+        "IS NULL",
+        "IS NOT NULL",
+        "contains",
+        "starts with",
+        "ends with"
+      ]
+    },
+    {
+      "columnNameDesc": "Document Id",
+      "columnName": "document_id",
+      "dataType": "text",
+      "maxLength": null,
+      "isNullable": "NO",
+      "defaultValue": null,
+      "operators": [
+        "=",
+        "!=",
+        "LIKE",
+        "NOT LIKE",
+        "ILIKE",
+        "NOT ILIKE",
+        "SIMILAR TO",
+        "NOT SIMILAR TO",
+        "IS NULL",
+        "IS NOT NULL",
+        "contains",
+        "starts with",
+        "ends with"
+      ]
+    }
+  ]
+}

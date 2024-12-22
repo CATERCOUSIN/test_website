@@ -1,0 +1,9 @@
+[
+  {"name": "Task 1", "id": "ID-0001", "assignTo": "John Doe", "dueDate": "2024-07-01"},
+  {"name": "Task 2", "id": "ID-0002", "assignTo": "DANISH", "dueDate": "2024-07-02"},
+  {"name": "Task 3", "id": "ID-0003", "assignTo": "John Doe", "dueDate": "2024-07-03"},
+  {"name": "Task 4", "id": "ID-0004", "assignTo": "John Doe", "dueDate": "2024-07-04"},
+  {"name": "Task 5", "id": "ID-0005", "assignTo": "jenny Chou", "dueDate": "2024-07-05"},
+  {"name": "Task 6", "id": "ID-0006", "assignTo": "Shubha", "dueDate": "2024-07-06"},
+  {"name": "Task 7", "id": "ID-0007", "assignTo": "Jerin", "dueDate": "2024-07-07"}
+]

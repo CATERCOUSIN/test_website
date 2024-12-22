@@ -1,0 +1,156 @@
+{
+  "responses": [
+    {
+      "keyword": "hello",
+      "content": "Hi there! How can I assist you today?",
+      "type": "string"
+    },
+    {
+      "keyword": "hi",
+      "content": "Hello! How can I help you?",
+      "type": "string"
+    },
+    {
+      "keyword": "covid-19",
+      "content": [
+        {
+          "document_name": " Covid-19 Test POC Design and Development Plan",
+          "id": "DDP-00002",
+          "rev": "01",
+          "dhf": "0038"
+        },
+        {
+          "document_name": "Covid-19 Test POC Software Development Plan",
+          "id": "SDP-00921",
+          "rev": "02",
+          "dhf": "0038"
+        },
+        {
+          "document_name": " Covid-19 Test OTC Project Plan",
+          "id": "DDP-00021",
+          "rev": "04*",
+          "dhf": "0001"
+        }
+      ],
+      "type": "table"
+    },
+    {
+      "keyword": "project update",
+      "content": [
+        {
+          "document_name": "Project Alpha Summary",
+          "id": "PRJ-0001",
+          "rev": "03",
+          "dhf": "0010"
+        },
+        {
+          "document_name": "Project Beta Requirements",
+          "id": "PRJ-0002",
+          "rev": "05",
+          "dhf": "0022"
+        },
+        {
+          "document_name": "Project Gamma Deployment Plan",
+          "id": "PRJ-0003",
+          "rev": "02",
+          "dhf": "0018"
+        }
+      ],
+      "type": "table"
+    },
+    {
+      "keyword": "team photo",
+      "content": [
+        {
+          "image_url": "https://example.com/images/team_photo_1.jpg",
+          "caption": "Team photo taken at the annual meetup."
+        },
+        {
+          "image_url": "https://example.com/images/team_photo_2.jpg",
+          "caption": "Team photo from the project launch event."
+        }
+      ],
+      "type": "image"
+    },
+    {
+      "keyword": "resources",
+      "content": [
+        {
+          "title": "Official Documentation",
+          "url": "https://example.com/docs",
+          "description": "Comprehensive guide to using our platform."
+        },
+        {
+          "title": "API Reference",
+          "url": "https://example.com/api",
+          "description": "Detailed API documentation."
+        },
+        {
+          "title": "Community Forum",
+          "url": "https://example.com/forum",
+          "description": "Join the community discussion."
+        }
+      ],
+      "type": "link"
+    },
+    {
+      "keyword": "training video",
+      "content": [
+        {
+          "video_url": "https://example.com/videos/training_intro.mp4",
+          "description": "Introduction to our new training module."
+        },
+        {
+          "video_url": "https://example.com/videos/training_advanced.mp4",
+          "description": "Advanced training on project workflows."
+        }
+      ],
+      "type": "video"
+    },
+    {
+      "keyword": "product catalog",
+      "content": [
+        {
+          "document_name": "Product A Specifications",
+          "id": "CAT-1001",
+          "rev": "01",
+          "dhf": "0050"
+        },
+        {
+          "document_name": "Product B User Guide",
+          "id": "CAT-1002",
+          "rev": "03",
+          "dhf": "0051"
+        },
+        {
+          "document_name": "Product C Installation Manual",
+          "id": "CAT-1003",
+          "rev": "02",
+          "dhf": "0052"
+        },
+        {
+          "document_name": "Product D Safety Data",
+          "id": "CAT-1004",
+          "rev": "04",
+          "dhf": "0053"
+        }
+      ],
+      "type": "table"
+    },
+    {
+      "keyword": "contact",
+      "content": "For further assistance, please contact support@example.com or call +123456789.",
+      "type": "string"
+    },
+    {
+      "keyword": "audio example",
+      "content": [
+        {
+          "audio_url": "https://example.com/audios/sample.mp3",
+          "description": "Sample audio file."
+        }
+      ],
+      "type": "audio"
+    }
+  ]
+}
