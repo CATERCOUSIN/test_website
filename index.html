@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/" />
+
+  <meta charset="UTF-8" />
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+  <meta name="description" content="A new Flutter project." />
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-title" content="SYNERIS" />
+  <link rel="apple-touch-icon" href="icons/Icon-192.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <title>SYNERIS</title>
+  <link rel="manifest" href="manifest.json" />
+
+  <meta
+          name="google-signin-client_id"
+          content="795423120701-jb5ah4trup1kil4ovhb4lcifa3voqlsj.apps.googleusercontent.com"
+  />
+
+  <!-- Load the Google API platform library -->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script type="application/javascript" src="/assets/packages/flutter_inappwebview_web/assets/web/web_support.js" defer></script>
+
+  <!-- Initialize Google Sign-In -->
+  <script>
+    function initClient() {
+      gapi.load('auth2', function() {
+        gapi.auth2.init({
+          client_id: '795423120701-jb5ah4trup1kil4ovhb4lcifa3voqlsj.apps.googleusercontent.com',
+        });
+      });
+    }
+  </script>
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    var serviceWorkerVersion = '"344233706"';
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+</head>
+<body>
+<script>
+  window.addEventListener("load", function (ev) {
+    // Initialize Google API client
+    initClient();
+
+    // Download main.dart.js and start Flutter
+    _flutter.loader
+      .loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+      })
+      .then(function (engineInitializer) {
+        return engineInitializer.initializeEngine();
+      })
+      .then(function (appRunner) {
+        return appRunner.runApp();
+      });
+  });
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+<script type="text/javascript">
+  pdfjsLib.GlobalWorkerOptions.workerSrc = "//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.worker.min.js";
+</script>
+</body>
+</html>
