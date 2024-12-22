@@ -1,75 +1,428 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <base href="/" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link rel = "icon" href = "assets/UI-01.png" type = "image/x-icon">
+    <title>CATER COUSIN</title>
+    <!-- <title>Castleblack</title> -->
+    <link rel="stylesheet" href="css/style.css">
 
-  <meta charset="UTF-8" />
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
-  <meta name="description" content="A new Flutter project." />
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  <meta name="apple-mobile-web-app-title" content="SYNERIS" />
-  <link rel="apple-touch-icon" href="icons/Icon-192.png" />
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png" />
-
-  <title>SYNERIS</title>
-  <link rel="manifest" href="manifest.json" />
-
-  <meta
-          name="google-signin-client_id"
-          content="795423120701-jb5ah4trup1kil4ovhb4lcifa3voqlsj.apps.googleusercontent.com"
-  />
-
-  <!-- Load the Google API platform library -->
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
-  <script type="application/javascript" src="/assets/packages/flutter_inappwebview_web/assets/web/web_support.js" defer></script>
-
-  <!-- Initialize Google Sign-In -->
-  <script>
-    function initClient() {
-      gapi.load('auth2', function() {
-        gapi.auth2.init({
-          client_id: '795423120701-jb5ah4trup1kil4ovhb4lcifa3voqlsj.apps.googleusercontent.com',
-        });
-      });
-    }
-  </script>
-
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '"344233706"';
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<script>
-  window.addEventListener("load", function (ev) {
-    // Initialize Google API client
-    initClient();
+    <!-- Header Section -->
+    <header>
+        <a href="#" class="logo">CATER COUSIN</a>
+        
+        <div id="menu-bar" class="fas fa-bars"></div>
 
-    // Download main.dart.js and start Flutter
-    _flutter.loader
-      .loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-      })
-      .then(function (engineInitializer) {
-        return engineInitializer.initializeEngine();
-      })
-      .then(function (appRunner) {
-        return appRunner.runApp();
-      });
-  });
-</script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
-<script type="text/javascript">
-  pdfjsLib.GlobalWorkerOptions.workerSrc = "//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.worker.min.js";
-</script>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#special">About Us</a>
+            <a href="#popular">Services</a>
+            <a href="#gallery">Portfolio</a>
+            <a href="#review">Review</a>
+            <a href="#order">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="sized-box">
+        <!-- This div is 50px tall and 100px wide -->
+    </div>
+    
+    <!-- Home Section -->
+    <section class="home" id="home">
+    
+        <div class="content">
+            <h3>Welcome to CATER COUSIN<br> 
+                </h3>
+            <p>
+            Your Trusted Software Development Partner.
+            </p>
+            <a href="#order" class="btn" >Contact Us</a>
+            
+        </div>
+        <div class="image">
+            <img src="assets/home-image.png" alt="">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="speciality" id="special">
+        <h1 class="heading">
+            About <span>Us</span>
+
+            <div class="box-container">
+                <div class="box">
+                    <img class="image" src="assets/android-dev.jpg" alt="">
+                    <div class="content">
+                        <img src="assets/Android-icon.png" alt="" height="50rem" width="50rem">
+                        <h3>Android Applications</h3>
+                        <p>
+                            Developing mobile applications for the Android operating system, catering to users of smartphones, tablets, and other Android-powered devices. This requires expertise in Java or Kotlin programming languages and knowledge of Android SDK.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img class="image" src="assets/ios-dev.jpg" alt="">
+                    <div class="content">
+                        <img src="assets/IOS-icon.png" alt="" height="50rem" width="50rem">
+                        <h3>IOS Applications</h3>
+                        <p>
+                            Creating mobile applications for Apple's iOS platform, targeting users of iPhones, iPads, and other iOS devices. This involves adherence to Apple's design and development guidelines to ensure compatibility and optimal performance.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img class="image" src="assets/web-dev.jpg" alt="">
+                    <div class="content">
+                        <img src="assets/web-icon.png" alt="" height="50rem" width="50rem">
+                        <h3>Web Applications</h3>
+                        <p>
+                            Building dynamic and interactive applications that are accessed through web browsers. This can include e-commerce platforms, content management systems (CMS), customer portals, and online collaboration tools, among others.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img class="image" src="assets/windows-dev.jpg" alt="">
+                    <div class="content">
+                        <img src="assets/Windows-icon.png" alt="" height="50rem" width="50rem">
+                        <h3>Windows Applications</h3>
+                        <p>CATER COUSIN is a team of experienced software developers passionate about creating high-quality software products.
+                            We use the latest technologies to ensure our products are efficient, scalable, and reliable.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img class="image" src="assets/graphic-design.jpg" alt="">
+                    <div class="content">
+                        <img src="assets/graphic-design-icon.png" alt="" height="50rem" width="50rem">
+                        <h3>Graphic Design</h3>
+                        <p>
+                            Providing visual communication solutions through graphic design services, including logo design, branding, UI design, illustration, and multimedia design. This ensures that digital products have visually appealing and cohesive aesthetics.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img class="image" src="assets/ui-ux.jpg" alt="">
+                    <div class="content">
+                        <img src="assets/UiUx-icon.png" alt="" height="50rem" width="50rem">
+                        <h3>UI / UX</h3>
+                        <p>
+                            Creating intuitive and engaging user interfaces and experiences for web and mobile applications
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </h1>
+    </section>
+
+    <!-- Service Section -->
+    <section class="popular" id="popular">
+        <h1 class="heading">Our <span>Services</span>.</h1>
+        <div class="box-container">
+            <div class="box">
+                <span class="price"> Best </span>
+                <img src="assets/custom-sw-dev.jpg" alt="">
+                <h3>Custom Software Development</h3>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <a href="#order" class="btn">Contact Us</a>
+            </div>
+
+            <div class="box">
+                <span class="price"> Best </span>
+                <img src="assets/Web-Application-Development.jpg" alt="">
+                <h3>Web Application Development</h3>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <a href="#order" class="btn">Contact Us</a>
+            </div>
+
+            <div class="box">
+                <span class="price"> Best </span>
+                <img src="assets/Product-Strategy-And-Consulting.jpg" alt="">
+                <h3>Product Strategy and Consulting</h3>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>         
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <a href="#order" class="btn">Contact Us</a>
+            </div>
+
+            <div class="box">
+                <span class="price"> Best </span>
+                <img src="assets/quality&testing.jpg" alt="">
+                <h3>Quality Assurance and Testing</h3>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <a href="#order" class="btn">Contact Us</a>
+            </div>
+
+            <div class="box">   
+                <span class="price"> Best </span>
+                <img src="assets/maintanace-support.jpg" alt="">
+                <h3>Maintenance and Support</h3>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <a href="#order" class="btn">Contact Us</a>
+            </div>
+
+            <div class="box">
+                <span class="price"> Best </span>
+                <img src="assets/cloud-service.jpg" alt="">
+                <h3>Cloud Services</h3>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <a href="#order" class="btn">Contact Us</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section class="steps">
+        <div class="box">
+            <img src="assets/design-plning.jpg" alt="">
+            <h3>Design and Planning</h3>
+        </div>
+        <div class="box">
+            <img src="assets/development-implimentation.jpg" alt="">
+            <h3>Development and Implementation</h3>
+        </div>
+        <div class="box">
+            <img src="assets/tesing-quality.jpg" alt="">
+            <h3>Testing and Quality Assurance</h3>
+        </div>
+        <div class="box">
+            <img src="assets/deploy-Maintain.jpg" alt="">
+            <h3>Deployment and Maintenance</h3>
+        </div>
+    </section>
+
+    <!-- PortFolio Section -->
+    <section class="gallery" id="gallery">
+        <h1 class="heading"> our <span> PortFolio</span></h1>
+        <div class="box-container">
+            
+            <div class="box">
+                <img src="assets/custom-sw-2.jpg" alt="">
+                <div class="content">
+                    <h3>Custom Software Development</h3>
+                    <p>There are many variations of passages of Lorem 
+                        Ipsum available </p>
+                    <a href="#order" class="btn">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="assets/web-dev2.jpg" alt="">
+                <div class="content">
+                    <h3>Web Application Development</h3>
+                    <p>There are many variations of passages of Lorem 
+                        Ipsum available</p>
+                    <a href="#order" class="btn">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="assets/mob-app.jpg" alt="">
+                <div class="content">
+                    <h3>Mobile App Development</h3>
+                    <p>There are many variations of passages of Lorem 
+                        Ipsum available </p>
+                    <a href="#order" class="btn">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="assets/graphic-design.jpg" alt="">
+                <div class="content">
+                    <h3>Graphic Design</h3>
+                    <p>There are many variations of passages of Lorem 
+                        Ipsum available</p>
+                    <a href="#order" class="btn">Contact Us</a>
+                </div>
+            </div>
+            
+                <div class="box">
+                    <img src="assets/windows-app.jpg" alt="">
+                    <div class="content">
+                        <h3>Windows Applications</h3>
+                        <p>There are many variations of passages of Lorem 
+                            Ipsum available</p>
+                        <a href="#order" class="btn">Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="assets/ios-app.jpg" alt="">
+                    <div class="content">
+                        <h3>iOS Applications</h3>
+                        <p>There are many variations of passages of Lorem 
+                            Ipsum available</p>
+                        <a href="#order" class="btn">Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="assets/android-app.jpg" alt="">
+                    <div class="content">
+                        <h3>Android Applications</h3>
+                        <p>There are many variations of passages of Lorem 
+                            Ipsum available</p>
+                        <a href="#order" class="btn">Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="assets/web-dev3.jpg" alt="">
+                    <div class="content">
+                        <h3>Web Applications</h3>
+                        <p>There are many variations of passages of Lorem 
+                            Ipsum available </p>
+                        <a href="#order" class="btn">Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="assets/AR-VR.jpg" alt="">
+                    <div class="content">
+                        <h3>AR / VR Development</h3>
+                        <p>There are many variations of passages of Lorem 
+                            Ipsum available</p>
+                        <a href="#order" class="btn">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Section -->
+    <!-- <section class="review">
+
+        <h1 class="heading">our customers <span>reviews</span> </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="images/pic1.png" alt="">
+                <h3>Joyal</h3>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <p>There are many variations of passages of Lorem 
+                    Ipsum available</p>
+            </div>
+
+            <div class="box">
+                <img src="images/pic2.png" alt="">
+                <h3>John</h3>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>There are many variations of passages of Lorem 
+                    Ipsum available</p>
+            </div>
+
+            <div class="box">
+                <img src="images/pic3.png" alt="">
+                <h3>Jenny</h3>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <p>There are many variations of passages of Lorem 
+                    Ipsum available</p>
+            </div>
+
+            
+
+        </div>
+        
+    </section> -->
+
+    <!-- Order Section -->
+    <section class="order" id="order">
+        <h1 class="heading"><span>Contact Us </span>now </h1>
+        <div class="row">
+            <div class="image">
+                <img src="assets/contact-us.jpg" alt="">
+            </div>
+
+        <form action="">
+             <div class="inputbox">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                </div>
+
+                <div class="inputbox">
+<!--                     <input type="number" placeholder="number"> -->
+                    <input type="text" placeholder="phone number">
+                </div>
+
+                <textarea placeholder="address" name="" id="" cols="30" rows="10"></textarea>
+
+                <input type="submit" value="Contact Us" class="btn">
+
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <div class="share">
+            <a href="#" class="btn">facebook</a>
+            <a href="#" class="btn">twitter</a>
+            <a href="#" class="btn">instagram</a>
+            <a href="#" class="btn">printerest</a>
+            <a href="#" class="btn">linkedin</a>
+        </div>
+
+        <h1 class="credit"> created by <span> CATER COUSIN </span>| all right reserved !</h1>
+
+    </section>
 </body>
 </html>
